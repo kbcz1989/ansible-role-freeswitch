@@ -10,4 +10,3 @@
   with_items:
     - "deb http://files.freeswitch.org/repo/deb/debian-release/ {{ ansible_distribution_release }} main"
     - "deb-src http://files.freeswitch.org/repo/deb/debian-release/ {{ ansible_distribution_release }} main"
-

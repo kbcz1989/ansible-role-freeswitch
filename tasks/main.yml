@@ -35,4 +35,3 @@
     name: "{{ fs_daemon }}"
     state: "{{ 'started' if fs_started else 'stopped' }}"
     daemon_reload: yes
-

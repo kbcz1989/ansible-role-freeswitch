@@ -5,4 +5,3 @@
     daemon_reload: yes
     name: "{{ fs_daemon }}"
   listen: "restart freeswitch"
-

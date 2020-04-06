@@ -10,4 +10,3 @@ __freeswitch_packages:
 
 __freeswitch_packages_full:
   - freeswitch-meta-all
-

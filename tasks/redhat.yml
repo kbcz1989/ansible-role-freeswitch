@@ -1,6 +1,7 @@
 ---
 - name: freeswitch | install OKay repo
   yum:
-    name: "http://repo.okay.com.mx/centos/{{ ansible_distribution_major_version }}/x86_64/release/okay-release-1-3.el{{ ansible_distribution_major_version }}.noarch.rpm"
+    name: 
+      "http://repo.okay.com.mx/centos/{{ ansible_distribution_major_version }}/x86_64/\
+      release/okay-release-1-3.el{{ ansible_distribution_major_version }}.noarch.rpm"
     state: present
-

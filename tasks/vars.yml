@@ -31,4 +31,3 @@
   set_fact:
     freeswitch_packages: "{{ __freeswitch_packages_full | list }}"
   when: fs_install_full
-

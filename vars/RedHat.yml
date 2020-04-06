@@ -291,4 +291,3 @@ __freeswitch_packages_full:
   - freeswitch-xml-radius
   - freeswitch-xml-scgi
   - freeswitch-yaml
-

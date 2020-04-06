@@ -104,4 +104,3 @@ __freeswitch_packages_full:
   - freeswitch-mod-xml-curl
   - freeswitch-mod-xml-rpc
   - freeswitch-mod-xml-scgi
-
