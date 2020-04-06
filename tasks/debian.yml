@@ -1,0 +1,13 @@
+---
+- name: freeswitch | install freeswitch repo key debian
+  apt_key:
+    url: https://files.freeswitch.org/repo/deb/debian-release/fsstretch-archive-keyring.asc
+
+- name: freeswitch | install freeswitch repo debian
+  apt_repository:
+    repo: "{{ item }}"
+    state: present
+  with_items:
+    - "deb http://files.freeswitch.org/repo/deb/debian-release/ {{ ansible_distribution_release }} main"
+    - "deb-src http://files.freeswitch.org/repo/deb/debian-release/ {{ ansible_distribution_release }} main"
+

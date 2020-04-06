@@ -1,0 +1,38 @@
+---
+- include_tasks: ubuntu.yml
+  when: ansible_distribution == "Ubuntu"
+  tags:
+    - freeswitch
+
+- include_tasks: debian.yml
+  when: ansible_distribution == "Debian"
+  tags:
+    - freeswitch
+
+- include_tasks: redhat.yml
+  when: ansible_os_family == "RedHat"
+  tags:
+    - freeswitch
+
+- include_tasks: vars.yml
+  tags:
+    - freeswitch
+
+- name: freeswitch | install freeswitch packages
+  package:
+    name: "{{ freeswitch_packages }}"
+    state: present
+
+- name: freeswitch | enable/disable service freeswitch and check mask
+  service:
+    name: "{{ fs_daemon }}"
+    enabled: "{{ 'yes' if fs_enabled else 'no' }}"
+    masked: no
+    daemon_reload: yes
+
+- name: freeswitch | start/stop freeswitch service
+  service:
+    name: "{{ fs_daemon }}"
+    state: "{{ 'started' if fs_started else 'stopped' }}"
+    daemon_reload: yes
+

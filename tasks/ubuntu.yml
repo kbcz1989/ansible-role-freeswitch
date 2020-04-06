@@ -1,0 +1,5 @@
+---
+- name: freeswitch | add freeswitch ppa ubuntu
+  apt_repository:
+    repo: ppa:strukturag/freeswitch
+

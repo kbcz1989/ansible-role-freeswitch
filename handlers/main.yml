@@ -1,0 +1,8 @@
+---
+- name: restart freeswitch
+  service:
+    state: restarted
+    daemon_reload: yes
+    name: "{{ fs_daemon }}"
+  listen: "restart freeswitch"
+

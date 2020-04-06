@@ -1,0 +1,34 @@
+---
+- name: freeswitch | include os-specific variables (Debian)
+  include_vars: "{{ ansible_distribution }}.yml"
+  when: ansible_distribution == 'Debian'
+
+- name: freeswitch | include os-specific variables (RedHat)
+  include_vars: "{{ ansible_os_family }}.yml"
+  when:
+  - ansible_os_family == 'RedHat'
+
+- name: freeswitch | include os-specific variables (Ubuntu)
+  include_vars: "{{ ansible_distribution }}.yml"
+  when: ansible_distribution == 'Ubuntu'
+
+- name: freeswitch | define fs_user
+  set_fact:
+    fs_user: "{{ __fs_user }}"
+  when: fs_user is not defined or not fs_user
+
+- name: freeswitch | define fs_group
+  set_fact:
+    fs_group: "{{ __fs_group }}"
+  when: fs_group is not defined or not fs_group
+
+- name: freeswitch | define freeswitch_packages
+  set_fact:
+    freeswitch_packages: "{{ __freeswitch_packages | list }}"
+  when: (freeswitch_packages is not defined or not freeswitch_packages) and not fs_install_full
+
+- name: freeswitch | define full freeswitch_packages
+  set_fact:
+    freeswitch_packages: "{{ __freeswitch_packages_full | list }}"
+  when: fs_install_full
+

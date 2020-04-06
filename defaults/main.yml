@@ -1,0 +1,5 @@
+---
+fs_daemon: freeswitch
+fs_enabled: true
+fs_started: false
+fs_install_full: false

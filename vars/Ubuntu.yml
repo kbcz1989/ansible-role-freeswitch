@@ -1,0 +1,107 @@
+---
+__fs_user: freeswitch
+__fs_group: freeswitch
+__fs_daemon: freeswitch
+
+__freeswitch_packages:
+  - freeswitch-meta-bare
+  - freeswitch-conf-vanilla
+  - freeswitch-systemd
+
+__freeswitch_packages_full:
+  - freeswitch
+  - freeswitch-init
+  - freeswitch-lang
+  - freeswitch-timezones
+  - freeswitch-meta-conf
+  - freeswitch-meta-lang
+  - freeswitch-meta-mod-say
+  - freeswitch-mod-abstraction
+  - freeswitch-mod-avmd
+  - freeswitch-mod-av
+  - freeswitch-mod-blacklist
+  - freeswitch-mod-callcenter
+  - freeswitch-mod-cidlookup
+  - freeswitch-mod-commands
+  - freeswitch-mod-conference
+  - freeswitch-mod-curl
+  - freeswitch-mod-db
+  - freeswitch-mod-directory
+  - freeswitch-mod-distributor
+  - freeswitch-mod-dptools
+  - freeswitch-mod-easyroute
+  - freeswitch-mod-enum
+  - freeswitch-mod-esf
+  - freeswitch-mod-esl
+  - freeswitch-mod-expr
+  - freeswitch-mod-fifo
+  - freeswitch-mod-fsk
+  - freeswitch-mod-fsv
+  - freeswitch-mod-hash
+  - freeswitch-mod-httapi
+  - freeswitch-mod-http-cache
+  - freeswitch-mod-lcr
+  - freeswitch-mod-memcache
+  - freeswitch-mod-nibblebill
+  - freeswitch-mod-oreka
+  - freeswitch-mod-pgsql
+  - freeswitch-mod-png
+  - freeswitch-mod-redis
+  - freeswitch-mod-rss
+  - freeswitch-mod-shout
+  - freeswitch-mod-sms
+  - freeswitch-mod-snapshot
+  - freeswitch-mod-snom
+  - freeswitch-mod-sonar
+  - freeswitch-mod-soundtouch
+  - freeswitch-mod-spandsp
+  - freeswitch-mod-spy
+  - freeswitch-mod-stress
+  - freeswitch-mod-translate
+  - freeswitch-mod-valet-parking
+  - freeswitch-mod-video-filter
+  - freeswitch-mod-voicemail
+  - freeswitch-mod-voicemail-ivr
+  - freeswitch-mod-tts-commandline
+  - freeswitch-mod-unimrcp
+  - freeswitch-mod-dialplan-asterisk
+  - freeswitch-mod-dialplan-directory
+  - freeswitch-mod-dialplan-xml
+  - freeswitch-mod-dingaling
+  - freeswitch-mod-loopback
+  - freeswitch-mod-portaudio
+  - freeswitch-mod-rtc
+  - freeswitch-mod-rtmp
+  - freeswitch-mod-skinny
+  - freeswitch-mod-sofia
+  - freeswitch-mod-verto
+  - freeswitch-mod-cdr-csv
+  - freeswitch-mod-cdr-mongodb
+  - freeswitch-mod-cdr-sqlite
+  - freeswitch-mod-erlang-event
+  - freeswitch-mod-event-multicast
+  - freeswitch-mod-event-socket
+  - freeswitch-mod-json-cdr
+  - freeswitch-mod-kazoo
+  - freeswitch-mod-snmp
+  - freeswitch-mod-local-stream
+  - freeswitch-mod-native-file
+  - freeswitch-mod-portaudio-stream
+  - freeswitch-mod-shell-stream
+  - freeswitch-mod-sndfile
+  - freeswitch-mod-tone-stream
+  - freeswitch-mod-java
+  - freeswitch-mod-lua
+  - freeswitch-mod-perl
+  - freeswitch-mod-python
+  - freeswitch-mod-yaml
+  - freeswitch-mod-console
+  - freeswitch-mod-logfile
+  - freeswitch-mod-syslog
+  - freeswitch-mod-posix-timer
+  - freeswitch-mod-timerfd
+  - freeswitch-mod-xml-cdr
+  - freeswitch-mod-xml-curl
+  - freeswitch-mod-xml-rpc
+  - freeswitch-mod-xml-scgi
+

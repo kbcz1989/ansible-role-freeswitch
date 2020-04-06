@@ -1,0 +1,13 @@
+---
+__fs_user: freeswitch
+__fs_group: freeswitch
+__fs_daemon: freeswitch
+
+__freeswitch_packages:
+  - freeswitch-meta-bare
+  - freeswitch-conf-vanilla
+  - freeswitch-systemd
+
+__freeswitch_packages_full:
+  - freeswitch-meta-all
+
